@@ -37,51 +37,72 @@
                 <span class="badge">[ Linux Homelab ]</span>
             </div>
             <div class="hero-ctas">
-                <a href="#projects" class="cta-primary">View Featured Projects ↓</a>
+                <a href="#hardware-projects" class="cta-primary">View Featured Projects ↓</a>
                 <a href="https://github.com/rdn91" target="_blank" class="cta-secondary">GitHub (rdn91) ↗</a>
                 <a href="https://www.linkedin.com/in/radwan-doufan/" target="_blank" class="cta-secondary">LinkedIn ↗</a>
                 <a href="mailto:radwandoufan@gmail.com" class="cta-secondary">Email Me ↗</a>
             </div>
         </section>
 
-        <!-- Featured Projects -->
-        <section id="projects" class="projects-section">
-            <h2>Featured Engineering Projects</h2>
-            <div class="projects-grid" id="projects-grid">
+        <!-- Hardware & Embedded Projects -->
+        <section id="hardware-projects" class="projects-section">
+            <h2>Hardware & Embedded Projects</h2>
+            <div class="projects-grid" id="hardware-grid">
                 <!-- Dynamically populated -->
             </div>
         </section>
 
-        <!-- Technical Skills Matrix -->
-        <section id="skills" class="skills-section">
-            <h2>Technical Skills Matrix</h2>
-            <div class="skills-grid" id="skills-grid">
+        <!-- Full-Stack & Infrastructure -->
+        <section id="software-projects" class="projects-section">
+            <h2>Full-Stack & Infrastructure</h2>
+            <div class="projects-grid" id="software-grid">
                 <!-- Dynamically populated -->
             </div>
         </section>
 
-        <!-- Hardware Lab -->
-        <section id="hardware-lab" class="hardware-section">
-            <h2>Hardware Lab, Research & Electronics Hub</h2>
-            <div class="hardware-content" id="hardware-content">
-                <!-- Dynamically populated -->
-            </div>
-        </section>
-        
-        <!-- Leadership -->
-        <section id="leadership" class="leadership-section">
-            <h2>Leadership, Workshops & Credentials</h2>
-            <div class="leadership-grid" id="leadership-grid">
-                <!-- Dynamically populated -->
+        <!-- Interactive Live Terminal / Status Widget -->
+        <section id="terminal-widget" class="terminal-section">
+            <h2>Interactive Live Terminal</h2>
+            <div class="terminal-container" id="terminal-container" tabindex="0">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="btn-close"></span>
+                        <span class="btn-min"></span>
+                        <span class="btn-max"></span>
+                    </div>
+                    <span class="terminal-title">radwandoufan@homelab: ~</span>
+                </div>
+                <div class="terminal-body">
+                    <div id="terminal-output"></div>
+                    <div class="terminal-input-line">
+                        <span class="prompt">guest@radwandoufan:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" autofocus>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- About -->
+        <!-- About, Teaching & Community -->
         <section id="about" class="about-section">
-            <h2>About & Engineering Philosophy</h2>
+            <h2>About, Teaching & Community</h2>
             <div class="about-content">
                 <p>I am a multidisciplinary engineer who thrives at the intersection of bits and atoms. Whether it's architecting a high-concurrency microservice in Python or diagnosing inductive flyback in a DC motor circuit, I believe in building robust, performant systems from the ground up.</p>
                 <p>My continuous learning journey involves tearing down hardware, reading low-level computer architecture papers, and deploying self-hosted infrastructure. I value clean code, secure architectures, and pragmatic problem-solving over framework hype.</p>
+            </div>
+            
+            <h3 class="subsection-title">Technical Skills Matrix</h3>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Dynamically populated -->
+            </div>
+
+            <h3 class="subsection-title">Hardware Lab, Research & Electronics Hub</h3>
+            <div class="hardware-content" id="hardware-content">
+                <!-- Dynamically populated -->
+            </div>
+
+            <h3 class="subsection-title">Leadership, Workshops & Credentials</h3>
+            <div class="leadership-grid" id="leadership-grid">
+                <!-- Dynamically populated -->
             </div>
         </section>
 

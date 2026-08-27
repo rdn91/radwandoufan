@@ -1,18 +1,22 @@
 import { projects, skills, hardwareLab, leadership } from '../projectsData.js';
 
 export function renderRecruiterMode() {
-    renderProjects();
+    const hardwareProjects = projects.filter(p => p.category.includes("Hardware"));
+    const softwareProjects = projects.filter(p => !p.category.includes("Hardware"));
+
+    renderProjectsGrid('hardware-grid', hardwareProjects);
+    renderProjectsGrid('software-grid', softwareProjects);
     renderSkills();
     renderHardwareLab();
     renderLeadership();
 }
 
-function renderProjects() {
-    const grid = document.getElementById('projects-grid');
+function renderProjectsGrid(gridId, projectList) {
+    const grid = document.getElementById(gridId);
     if (!grid) return;
-    grid.innerHTML = ''; // Initial clear is fine since it's just removing empty space
+    grid.innerHTML = ''; 
     
-    projects.forEach(project => {
+    projectList.forEach(project => {
         const card = document.createElement('div');
         card.className = 'project-card';
         

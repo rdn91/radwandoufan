@@ -316,3 +316,111 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Subsection Title */
+.subsection-title {
+    font-size: 1.5rem;
+    color: var(--text-white);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-tint);
+    padding-bottom: 0.5rem;
+    font-family: var(--font-display);
+}
+
+/* Terminal Widget */
+.terminal-section {
+    margin-bottom: 5rem;
+}
+
+.terminal-container {
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    border: 1px solid var(--border-tint);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: var(--font-mono);
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+
+.terminal-header {
+    background-color: #333333;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-controls span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.btn-close { background-color: #FF5F56; }
+.btn-min { background-color: #FFBD2E; }
+.btn-max { background-color: #27C93F; }
+
+.terminal-title {
+    color: #999;
+    font-size: 0.85rem;
+    margin-left: 15px;
+    flex-grow: 1;
+    text-align: center;
+    margin-right: 45px; /* Offset to center text visually */
+}
+
+.terminal-body {
+    padding: 15px;
+    flex-grow: 1;
+    overflow-y: auto;
+    color: #D4D4D4;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: #1E1E1E;
+}
+
+.terminal-line {
+    margin-bottom: 5px;
+    word-break: break-all;
+}
+
+.terminal-line a {
+    color: var(--accent-mint);
+    text-decoration: underline;
+}
+
+.command-echo {
+    color: var(--text-white);
+}
+
+.terminal-input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.prompt {
+    color: var(--accent-mint);
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+#terminal-input {
+    background: transparent;
+    border: none;
+    color: var(--accent-amber);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    flex-grow: 1;
+    outline: none;
+    caret-color: var(--accent-amber);
+}
