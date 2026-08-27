@@ -312,4 +312,7 @@
     .contact-container {
         grid-template-columns: 1fr;
     }
+    .projects-grid, .skills-grid, .hardware-content, .leadership-grid {
+        grid-template-columns: 1fr;
+    }
 }

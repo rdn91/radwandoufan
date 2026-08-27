@@ -75,6 +75,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
+    gap: 1rem;
 }
 
 .logo {
@@ -141,4 +142,13 @@ main {
 
 section {
     margin-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+    .sticky-header {
+        padding: 1rem;
+    }
+    main {
+        padding: 90px 1.5rem 2rem;
+    }
 }
