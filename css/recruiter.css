@@ -1,0 +1,315 @@
+/* Hero Section */
+.hero-section {
+    padding: 4rem 0;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 245, 160, 0.1);
+    color: var(--accent-mint);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(0, 245, 160, 0.2);
+}
+
+.status-badge .dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-mint);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 245, 160, 0.4); }
+    70% { box-shadow: 0 0 0 6px rgba(0, 245, 160, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 245, 160, 0); }
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    max-width: 900px;
+    margin-bottom: 1.5rem;
+}
+
+.core-pillars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.core-pillars .badge {
+    font-family: var(--font-mono);
+    color: var(--accent-amber);
+    background: var(--surface-navy);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-tint);
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-primary {
+    background: var(--text-white);
+    color: var(--bg-cyber-slate);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-family: var(--font-display);
+    font-weight: 600;
+}
+
+.cta-primary:hover {
+    background: var(--accent-mint);
+    color: var(--bg-cyber-slate);
+}
+
+.cta-secondary {
+    background: transparent;
+    color: var(--text-white);
+    border: 1px solid var(--border-tint);
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-family: var(--font-display);
+}
+
+.cta-secondary:hover {
+    background: var(--surface-navy);
+    border-color: var(--accent-mint);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--surface-navy);
+    border: 1px solid var(--border-tint);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-mint);
+}
+
+.project-category {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--accent-coral);
+    margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-summary {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.stack-tag {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-tint);
+}
+
+.project-highlights {
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.project-highlights li {
+    margin-bottom: 0.4rem;
+}
+
+.project-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.project-actions a {
+    font-size: 0.9rem;
+    font-family: var(--font-display);
+}
+
+/* Skills Matrix */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background: var(--surface-navy);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-tint);
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    color: var(--accent-amber);
+    margin-bottom: 1rem;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-items span {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-tint);
+}
+
+/* Hardware Lab & Leadership */
+.hardware-content, .leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.hardware-card, .leadership-card {
+    background: var(--surface-navy);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-tint);
+}
+
+.hardware-card h3, .leadership-card h3 {
+    font-size: 1.2rem;
+    color: var(--accent-mint);
+    margin-bottom: 0.8rem;
+}
+
+.hardware-card p, .leadership-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* About Section */
+.about-content p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+/* Contact Section */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-muted);
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    background: var(--surface-navy);
+    border: 1px solid var(--border-tint);
+    color: var(--text-white);
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-family: var(--font-body);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-mint);
+}
+
+.submit-btn {
+    background: var(--accent-mint);
+    color: var(--bg-cyber-slate);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.submit-btn:hover {
+    background: var(--accent-amber);
+}
+
+.social-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.instant-mailto {
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+}
+
+.profile-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .center-links {
+        display: none;
+    }
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
